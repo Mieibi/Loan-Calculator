@@ -16,7 +16,7 @@
   <body>
     <div class="content">
         <h1 class="header">Loan Calculator</h1>
-        <form action="">
+        <form id="loan-form">
             <div class="input">
                 <span class="icon"><i class="fas fa-dollar-sign input-icon fa-sm"></i></span>
                 <input class="amount"type="number" placeholder="Loan Amount">
@@ -26,10 +26,42 @@
                 <input class="rate" type="number" placeholder="Annual Interest">
             </div>
             <input class="time" type="number" placeholder="Repayment Years">
-            <button class="button" type="submit" >Calculate</button>
+            <input class="button" type="submit" value="Calculate" >
         </form>
+        <div class="load"> 
+          <h3>Calculating...</h3>
+          <img src="img/loading.gif" alt="loading...">
+        </div>
+        <div class="result">
+          <h3>Results</h3>
+          <div class="input">
+            <span class="name">
+              <p class="result-text">
+                Monthly Payment
+              </p>
+            </span>
+            <span class="output"></span>
+          </div>
+          <div class="input">
+            <span class="name">
+              <p class="result-text">
+                Total Payment
+              </p>
+            </span>
+            <span class="output"></span>
+          </div>
+          <div class="input">
+            <span class="name">
+              <p class="result-text">
+                Total Interest
+              </p>
+            </span>
+            <span class="output"></span>
+          </div>
+        </div>
     </div>
 
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/dd9b22afbb.js"
       crossorigin="anonymous"
