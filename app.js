@@ -6,7 +6,6 @@ form.addEventListener('submit', calculate);
 
 //Calculate Results
 function calculate(e){
-    console.log("boy");
     
     //load gif amd calculations
     Loader();
